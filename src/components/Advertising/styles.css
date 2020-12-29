@@ -1,0 +1,117 @@
+
+.advertising{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 90%;
+    color: #fff;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 70px;
+
+    position: relative;
+}
+
+.advertising .img-thumb{
+    width: 100%;
+    max-width: 450px;
+    max-height: 400px;
+    border-radius: 18px;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+}
+
+.advertising .content-infor{
+    z-index: 10;
+    position: relative;
+    margin: 0 10px;
+}
+
+.advertising .content-infor h1{
+    font-size: 30px;
+}
+
+.advertising .content-infor p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.advertising .content-infor ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.advertising .content-infor ul li {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    padding: 6px 6px;
+
+}
+
+.advertising .content-infor ul li:nth-child(n + 2){
+    margin-left: 10px;
+}
+
+.advertising .content-infor button{
+    width: 200px;
+    height: 60px;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+
+    border: 1px solid red;
+    border-radius: 25px;
+    box-shadow: 0 2px 0 2px rgb(61, 60, 60);
+    
+    transition: 0.5s;
+}
+
+.advertising .content-infor button:hover{
+    background-color: #fff;
+    color: red;
+    border-color: #fff;
+    box-shadow: none;
+}
+
+@media(min-width: 600px){
+    .advertising{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .advertising .img-thumb{
+        position: relative;
+        opacity: 1;
+        width: 200px;
+        margin-right: 10px;
+        align-self: flex-start;
+    }
+}
+
+@media(min-width: 800px){
+    
+    .advertising .img-thumb{
+        width: 300px;
+    }
+}
+
+@media(min-width: 1100px){
+    .advertising .img-thumb{
+        margin-right: 20px;
+    }
+}
+
+.content-infor .btnprox{
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
+}

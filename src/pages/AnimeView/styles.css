@@ -1,0 +1,123 @@
+.content-view{
+    background-image: url('../../assets/back_dragon.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.anime-infor{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.anime-infor img{
+    max-height: 400px;
+    margin-top: 30px;
+}
+
+.anime-infor .content-infors{
+    margin-left: -200px;
+}
+
+.anime-infor .content-infors p{
+    font-size: 18px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.anime-infor .content-infors .content-genres{
+    display: flex;
+}
+
+.anime-infor .content-infors .content-genres .genre{
+    margin-left: 5px;
+    padding: 5px;
+    background-color: #000;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+
+.content-episodes{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+  padding: 10px;
+  background-color: #000;
+  width: max-content;  
+}
+
+.content-episodes main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+
+@media(max-width: 350px){
+    .content-episodes main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(min-width: 600px){
+    .content-episodes main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 800px){
+
+    .anime-infor .content-infors{
+        margin: 0;
+    }
+
+    .anime-infor{
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+    .anime-infor img{
+        margin-right: 20px;
+    }
+
+    .content-episodes main{
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+@media(min-width: 1200px){
+    .content-episodes main{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+   }
+}
+
+.buttons{
+    margin-top: 40px;
+}
+
+.buttons button{
+    background-color: red;
+    border: 1px solid red;
+    height: 40px;
+    width: 100px;
+    color: #ffff;
+    font-weight: bold;
+    margin-left: 10px;
+    min-width: 80px;
+    border-radius: 8px;
+}
+
+.buttons button:hover{
+    opacity: 0.6;
+}

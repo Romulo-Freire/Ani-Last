@@ -1,0 +1,130 @@
+.app{
+    height: 100vh;
+    background-image: url('../../assets/onepiece.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.title{
+    font-size: 22px;
+    margin-left: 10%;
+}
+
+.name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name .content-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    padding: 0;
+}
+
+.buttons-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.buttons-links button{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border: 1px solid red;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.buttons-links button a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button-more-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-more-content button{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.button-more-content button:hover{
+    background-color: white;
+    color: red;
+}
+
+.content-categories-max-width hr{
+    display: none;
+}
+
+@media(max-width: 350px){
+    .name .content-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(min-width: 600px){
+    .name .content-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 800px){
+   .name .content-cards{
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+@media(min-width: 1200px){
+    .name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+   .content-categories-max-width{
+       align-self: flex-start;
+       display: flex;
+       margin-top: 13px;
+   }
+
+   .content-categories-max-width hr{
+       display: block;
+       margin-left: -50px;
+       margin-right: 50px;
+       height: 860px;
+   }
+}
+
+.loading{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}

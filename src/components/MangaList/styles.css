@@ -1,0 +1,37 @@
+.manga-view{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.manga-view button{
+    background-color: #E52626;
+    border: 1px solid;
+    border-radius: 18px;
+}
+
+.manga-view .list-mangas{
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+
+    padding: 0 5px;
+    scroll-behavior: smooth;
+
+    
+}
+
+.manga-view .list-mangas::-webkit-scrollbar{
+    display: none;
+}
+
+.manga-view .list-mangas:first-child{
+    margin-left: -10px;
+}
+
+.manga-view .list-mangas li{
+    margin-left: 5px;
+}

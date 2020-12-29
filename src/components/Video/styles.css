@@ -1,0 +1,37 @@
+.content-play{
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    border-radius: 8px;
+}
+
+.content-video{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.tunbnail{
+    width: 190px;
+    border-radius: 12px;
+    max-height: 150px;
+}
+
+.tunbnail:hover{
+    opacity: 0.8;
+}
+
+.play{
+    width: 40px;
+    position: absolute;
+    left: 40%;
+    display: none;
+}
